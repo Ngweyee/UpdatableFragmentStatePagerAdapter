@@ -30,7 +30,7 @@ public class PageFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ((TextView)view.findViewById(R.id.fragment_title)).setText(String.format(Locale.US, "%d", getSomeIdentifier()));
+       // ((TextView)view.findViewById(R.id.fragment_title)).setText(String.format(Locale.US, "%d", getArgument().get));
     }
 
     public int getSomeIdentifier() {
